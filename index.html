@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2021 Frontend Developer Crash Course</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Moreh <span>Wa</span> Chege</a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="twitter.html">Twitter</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Yello! I'm Moreh and these are</p>
+                <h1>All my audatious goals and dreams...</h1>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <h2 class="title" style="text-align: center;">A small introduction</h2>
+        <div class="paragraph">
+            <img id="smart-thumbnail" class="paragraph-image small" src="images/moreh.png" alt="">
+                <div class="paragraph-statement">
+                    <p class="paragraph-1">
+                        Hello, I am Moreh Wa Chege. I am a student at The East African University, in my last year in campus. I am a young developer seeking guidance into the world of software development through the 12 month course on ALX.
+                        I am dedicated to learning new things and I find quite a thrill in this.
+                        I like soft music and I vibe with the reggae genre. My favorite reggae artist is <i>Bob Marley</i>, the late. His music gives me inspiration to do things that make me out of my way.
+                        One of this is taking time to do this application. 
+                    </p>
+                    <p>I have never been entirely fantastic in front end development but this application has helped me overcome the fear of failure and that is something I can put in my bag of accomplishments without any regrets.
+                        I appreciate ALX for this and would love to continue on this journey with you to help my community benefit from my efforts and solve national-wide challenges.
+                        I have written several programs in python and django, with one of my programs entailing a book-sharing websites to help less fortunate people gain access to books.
+
+                    </p>
+                    <p>I have shared some of the links below;
+                        <ul>
+                            <li><a href="https://github.com/morehwachege">Github</a></li>
+                            <li><a href="https://linkedin.com/in/antonymuriithi">LinkedIn</a></li>
+                        </ul>
+                    </p>
+                </div>
+        </div>
+    </section>
+
+  
+    <footer class="container-footer">
+        <h2 class="shield">Software is magic's proof of concept, Wink!</h2>
+        <div class="moreh">
+            <div class="footer-col-1">
+                <div class="social-icons">
+                    <h4 class="shield-inner">Find me on social media</h4>
+                    <ul>
+                        <li><i class="fab fa-github-square"></i><a href="https://github.com/morehwachege">Github</a></li>
+                        <li><i class="fab fa-linkedin"></i>
+                            <a href="https://linkedin.com/in/antonymuriithi">LinkedIn</a>
+                        </li>
+                        <li><i class="fab fa-facebook"></i><a href="https://facebook.com/morehwachege">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <div class="side-footer-text">
+                    <h4 class="shield-outer">Services offered</h4>
+                    <ul>
+                        <li><p class="shield-text">Cool complete and custom-made websites.</p></li>
+                        <li><p class="shield-text">Full feature configuration of full application.</p></li>
+                        <li><p class="shield-text">Application maintenace.</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+    <script src="js.js"></script>
+
+</body>
+</html>
